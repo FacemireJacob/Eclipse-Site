@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<link rel="stylesheet" type="text/css" href="CSS/travel.css">
+
+<head>
+    <title>Eclipse East Landing Page</title>
+
+
+<!--Top Section Above Nav Bar-->
+<div id = "banner" style="background-image: url('images/promo/groupPhotoCut.jpeg');
+background-size: cover; 
+height: 480px;
+padding:50px;  
+margin-top: -10px;
+margin-left: -200px;
+margin-right:-10px;">
+</div>
+
+</head>
+
+<!--Navigation-->
+<div id="nav">
+    <a href="index.php">Home</a>
+    <a href="travel.html">Travel</a>
+    <a href="games.html">Games</a>
+</div>
+
+<body>
+
+  <div id = "rule">Venue</div>
+
+<div id = "container">
+  <div class = "box"><img src="images/travel/BCC.webp" ALIGN="center"></div>
+  <div class = "box"><p style="font-size: 20pt;">After 3 years since its inception with just a handful of members, the DMV Based Rhythm Gaming Community is ambitiously hosting it’s very 
+    first official rhythm gaming tournament in the East Coast from December 10th – December 12th, 2021. The first event will be proudly hosted 
+    at the Baltimore Convention Center, just a mere few blocks away from the iconic Inner Harbor that hosts a countless amount of annual large-scale 
+    events settled in the heart of the Port of Baltimore.</p> </div>
+</div>
+
+<div id = "rule">Airports</div>
+
+<div id = "container">
+  <div class = "box"><p style="font-size: 20pt; margin: 20px;">The closest Airport to Baltimore will be the Baltimore/Washington International Thurgood Marshall Airport,
+     located 10 miles south of the venue.</p> 
+    <h2>Getting To The Venue</h2>
+    <p style="font-size: 16pt; margin: 20px;">BWI has an abundance of Uber & Lyft drivers within minutes of the airport as an option, it is the quickest transit, but my not be the cheapest.
+       If you so please, you can save some money by taking the BWI Airport Light Rail NB Station directly from the airport to the Camden Station Light
+        Rail, right in front of the Baltimore Orioles Ballpark, which is 0.2 miles away or one block from the Convention Center. The Light Rail link 
+        runs every 20 mins.
+        
+    </div>
+  <div class = "box" style="flex-grow: 1;"><img src="images/travel/BWI.jpg" ALIGN="center"></div>
+
+</div>
+
+<div id = "rule">Hotels</div>
+
+<div id = "container">
+  <div class = "box"><img src="images/travel/marriot.webp" ALIGN="LEFT"></div>
+  <div class = "box">
+    <p style="font-size: 20pt;">
+    <b>Hotel Block:</b> The Hampton Inn in Downtown Baltimore @ 550 Washington Blvd. Baltimore, Maryland 21230 - $125/night,
+     https://tinyurl.com/4wft2a82 or call in at 410-685-5000 and ask for Hotel Block Group Name: Eclipse East 2021 | Group Code: 
+     AEE to obtain the special rate.
+    
+    Alternative Hotels: Sheraton Inner Harbor - $112/night Days Inn by Wyndham Baltimore Inner Harbor - $135/night Pier 5 Hotel Baltimore - $138/night Renaissance Baltimore Harborplace - $175/night Hyatt Regency Baltimore Inner Harbor - $212/night</p> </div>
+    </p>
+  </div>
+
+  <div id = "rule">Location</div>
+
+<div id = "container">
+  <div class = "box"> <p style="font-size: 20pt;">1 W Pratt St, Baltimore, MD 21201</p>
+    <p style="font-size: 18pt;">located in Downtown Baltimore jsut north of Fed Hill the BCC has a number
+    of nearby attractions such as the Baltimore Aquarium, the Horseshoe Casino, and of course, Camden Yards right across the street.</p>
+
+  <p style="font-size: 18pt;">With a variety of food options in walking distance such as Morton's Steakhouse, Ramen Utsuke, Pratt Street Ale House, Chipotle, Potbelly
+  and the famous Pickles Pub</p>
+  
+</div>
+  <div class = "box box1">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1544.0571195408745!2d-76.61877761613864!3d39.2856597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80360f5a421a9%3A0xd3299969b90b590d!2sThe%20Baltimore%20Convention%20Center!5e0!3m2!1sen!2sus!4v1656355610832!5m2!1sen!2sus" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+
+</body>
+
+<script>
+
+  //JS for Sticky Nav Bar
+  
+    window.onscroll = function() {myFunction()};
+    
+    //Create a JS Var containing the navbar
+    var navbar = document.getElementById("nav");
+    //Uses an Offset value to determine whether or not you need to 'stick' the bar
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+    //If the scroll bar goes below apply sticking property
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+    
+
+</HTML>

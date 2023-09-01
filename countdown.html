@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.box {
+  margin: 0%;
+}
+
+</style>
+</head>
+<body>
+
+<div id = "container">
+
+<div class = "box">
+  Time Until <br> Eclipse 2023: <br>
+  Days &#8287&#8287&#8287 Hours &#8287&#8287&#8287 Minutes &#8287&#8287&#8287 Seconds
+</div>
+  <!--Create blank element to modify via JS-->
+<div id= "clock" style="margin: 0;font-size: 48px;"></div>
+
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("December 8, 2023 03:00:00").getTime();
+
+// Set Interval Takes a function and performs it on a timer
+var x = setInterval(//Create Counting down function
+function()
+ {
+  // Current Time
+  var currentTime = new Date().getTime();
+    
+  // Find the timeLeft between now and the event date
+  var timeLeft = countDownDate - currentTime;
+    
+  // Calculate time left
+  var days = Math.floor(timeLeft / (86400000)); 
+  var hours = Math.floor((timeLeft % (86400000)) / (3600000));
+  var minutes = Math.floor((timeLeft % (3600000)) / (60000));
+  var seconds = Math.floor((timeLeft % (60000)) / 1000);
+    
+  //If any value is < 10 change it so it displays correctly
+  if(days < 10) {
+    days = "0" + days;
+  }
+  if(hours <10) {
+     hours = "0" + hours; 
+  }
+  if(minutes <10) {
+     minutes= "0" +minutes; 
+  }
+  if( seconds<10) {
+     seconds= "0" + seconds;
+  }
+
+  // Fill Blank Element setup earlier
+  document.getElementById("clock").innerHTML = days + " &#8287&#8287:&#8287&#8287 " + hours + " &#8287&#8287:&#8287&#8287 " + minutes + " &#8287&#8287:&#8287&#8287 " + seconds;
+    
+  // If the count down is over, write some text 
+  if (timeLeft < 0) {
+    clearInterval(x);
+    document.getElementById("clock").innerHTML = "Right Now! (not working lol)";
+  }
+}, 
+
+//1000 ms = 1 second
+1000);
+</script>
+
+</body>
+</html>

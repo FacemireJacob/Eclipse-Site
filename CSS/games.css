@@ -1,0 +1,87 @@
+body
+{
+    background-color: #0c1146;
+    color:white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    object-fit: fill;
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+}
+/*DIV tag used to create a border around elements, similar to */
+#border
+{
+    background-color: gray;
+    margin: 20%;
+    margin-top: 0;
+    opacity: 50%;
+}
+
+/*
+    We Use Flexbox to setup and organize images
+*/
+#container { 
+    display: flex;
+    background-color: gray;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    padding-top: 15px;
+    max-width: 100%;
+    justify-content: center;
+   }
+   .box {
+    width: 12cm;
+    height: 6cm;
+    margin: 0;
+    padding: -10px;
+    align-items: center;
+   }
+
+/*
+     Shared CSS WIth all Pages 
+*/
+#nav
+{
+    background-color: #000000;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right:-10px;
+    text-align: center;
+    /* add back negative margin value */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+
+a:link,a:visited
+{
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+a:hover, a:active{
+    background-color: gray;
+    color: white;
+}
+  
+  /* "Sticky" Which is added to the na bar to make it stick once scrolled*/
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }

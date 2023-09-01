@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<link rel="stylesheet" type="text/css" href="CSS/games.css">
+
+<head>
+    <title>Eclipse East Landing Page</title>
+
+
+<!--Top Section Above Nav Bar-->
+<div id = "banner" style="background-image: url('images/promo/groupPhotoCut.jpeg');
+background-size: cover; 
+height: 480px;
+padding:50px;  
+margin-top: -10px;
+margin-left: -200px;
+margin-right:-10px;">
+</div>
+
+</head>
+
+<!--Navigation-->
+<div id="nav">
+    <a href="index.php">Home</a>
+    <a href="travel.html">Travel</a>
+    <a href="games.html">Games</a>
+</div>
+
+<body>
+  <h1>Eclipse East features a wide variety of the most popular arcade rhythm games provided by our wonderful partners! Check out the list below!</h1> 
+
+<div id="container">
+  <div class="box box1"> <img src = "images/Games/XX.png"></div> 
+  <div class="box box2"><img src = "images/Games/DDRA.png"></div>  
+  <div class="box box3"><img src = "images/Games/SMX.png"></div>
+  <div class="box box4"><img src = "images/Games/DRS.png"></div>
+  <div class="box box5"><img src = "images/Games/BEAT_SABER.png"></div>
+  <div class="box box6"><img src = "images/Games/CHUNITHM.webp"></div>
+  <div class="box box7"><img src = "images/Games/IIDX.png"></div>
+  <div class="box box8"><img src = "images/Games/jubeat.png"></div>
+  <div class="box box9"><img src = "images/Games/NeonFM.png"></div>
+  <div class="box box10"><img src = "images/Games/popn.png"></div>
+  <div class="box box11"><img src = "images/Games/sdvxV.png"></div>
+  <div class="box box12"><img src = "images/Games/Tech3.png"></div>
+  <div class="box box13"><img src = "images/Games/WACCA.webp"></div>
+
+</div>
+
+</body>
+
+<!--JS Script for Sticky Nav Bar-->
+
+<script>
+
+    window.onscroll = function() {myFunction()};
+    
+    //Create a JS Var containing the navbar
+    var navbar = document.getElementById("nav");
+    //Uses an Offset value to determine whether or not you need to 'stick' the bar
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+    //If the scroll bar goes below apply sticking property
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+    
+</HTML>
